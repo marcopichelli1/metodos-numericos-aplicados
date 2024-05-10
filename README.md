@@ -1,102 +1,79 @@
-# Applied-Numerical-Methods
+Métodos Iterativos -
+São métodos que utilizam uma estimativa inicial e depois aplicam repetidamente uma fórmula para obter uma melhor aproximação da solução. Alguns exemplos de métodos iterativos são:
 
-Are you frustrated by applying numerical methods to endless iterations and still getting the wrong answer? Don’t worry, we have a solution!. We have created programs that will apply these methods for you and give you instant results We have made every effort to ensure that our programs are easy to use and effective in solving various kinds of problems. Numerical methods are techniques for solving mathematical problems that cannot be solved analytically. They are widely used in engineering and science applications, such as optimization, interpolation, integration, differential equations, linear algebra, and more. However, implementing numerical methods can be challenging and time-consuming, especially for beginners. That’s why we have developed these programs using Python, a powerful and versatile programming language that is suitable for numerical computing.
+• Método Newton-Raphson - Este é um método para encontrar as raízes de uma equação não linear usando a derivada da função.
 
+• Método Secante - Este é um método para encontrar as raízes de uma equação não linear usando uma linha secante que passa por dois pontos na função.
 
-The main purpose of this repository is to provide a learning resource for students and instructors of numerical methods courses. It can also serve as a reference for anyone who is interested in numerical computing and scientific programming.
+• Método de Iteração de Ponto Fixo - Este é um método para encontrar as raízes de uma equação não linear reescrevendo-a como x = g(x) e então iterando x = g(x) até a convergência.
 
-## Programs for the methods that we have made:
+• Eliminação de Gauss - Este é um método para resolver um sistema de equações lineares reduzindo a matriz a uma forma triangular superior usando operações elementares com linhas.
 
-### Iterative Methods - 
-These are methods that use an initial guess and then repeatedly apply a formula to obtain a better approximation of the solution. Some examples of iterative methods are:
+• Gauss-Seidel - Este é um método para resolver um sistema de equações lineares usando um esquema iterativo que atualiza cada variável por vez.
 
-•	Newton-Raphson Method - This is a method for finding the roots of a nonlinear equation by using the derivative of the function.
+• Método da Bissecção - Este é um método para encontrar a raiz de uma função dentro de um determinado intervalo, dividindo repetidamente o intervalo pela metade e identificando o subintervalo em que a raiz se encontra, convergindo para a raiz através de refinamento iterativo.
 
-•	Secant Method - This is a method for finding the roots of a nonlinear equation by using a secant line that passes through two points on the function.
+Métodos de interpolação -
+São métodos que estimam o valor de uma função em um determinado ponto usando valores conhecidos da função em outros pontos. Alguns exemplos de métodos de interpolação são:
 
-•	Fixed-Point Iteration Method - This is a method for finding the roots of a nonlinear equation by rewriting it as x = g(x) and then iterating x = g(x) until convergence.
+• Interpolação direta de Newton - Este é um método para interpolar uma função usando uma tabela de diferenças diretas e um polinômio de grau n-1 que passa por n pontos dados.
 
-•	Gauss-Elimination - This is a method for solving a system of linear equations by reducing the matrix to an upper triangular form using elementary row operations.
+• Interpolação inversa de Newton - Este é um método para interpolar uma função usando uma tabela de diferenças inversas e um polinômio de grau n-1 que passa por n pontos dados.
 
-•	Gauss-Seidel - This is a method for solving a system of linear equations by using an iterative scheme that updates each variable in turn.
+• Interpolação de Lagrange - Este é um método para interpolar uma função usando um polinômio de grau n-1 que passa por n pontos dados.
 
-• Bisection Method - This is a method for finding the root of a function within a given interval by repeatedly dividing the interval in half and identifying the subinterval in which the root lies, converging towards the root through iterative refinement.
+• Interpolação Inversa de Lagrange - Este é um método para encontrar o valor de uma variável x que corresponde a um determinado valor de uma função y usando um polinômio de grau n-1 que passa por n pontos dados (x_i, y_i).
 
-### Interpolation Methods - 
-These are methods that estimate the value of a function at a given point by using known values of the function at other points. Some examples of interpolation methods are:
+Métodos Numéricos Diferenciais-Integrais -
+Estes são os métodos utilizados para aproximar os valores de derivadas e integrais de funções matemáticas, utilizados quando é difícil ou impossível obter soluções analíticas exatas para problemas de diferenciação ou integração:
 
-•	Newton Forward Interpolation - This is a method for interpolating a function by using a forward difference table and a polynomial of degree n-1 that passes through n given points.
+• Regra da Quadratura - Este é um método para aproximar a área sob uma curva avaliando a função em pontos específicos e usando pesos correspondentes.
 
-•	Newton Backward Interpolation - This is a method for interpolating a function by using a backward difference table and a polynomial of degree n-1 that passes through n given points.
+• Regra trapezoidal - Este é um método para aproximar integrais definidas dividindo o intervalo de integração em trapézios menores e estimando a área sob a curva como a soma das áreas desses trapézios.
 
-•	Lagrange Interpolation - This is a method for interpolating a function by using a polynomial of degree n-1 that passes through n given points.
+• Regra de Simpson - A regra de Simpson é um método para aproximar integrais definidas dividindo o intervalo de integração em intervalos menores e aproximando a área sob a curva usando polinômios quadráticos, fornecendo uma estimativa mais precisa em comparação com a regra trapezoidal.
 
-• Lagrange Inverse Interpolation - This is a method for finding the value of a variable x that corresponds to a given value of a function y by using a polynomial of degree n-1 that passes through n given points (x_i, y_i).
+• Regra de Romberg - Este é um método para melhorar a precisão da integração numérica, refinando e extrapolando iterativamente as estimativas obtidas a partir da regra trapezoidal.
 
-### Numerical Differential-Integral Methods - 
-These are the methods used to approximate the values of derivatives and integrals of mathematical functions, used when it is difficult or impossible to obtain exact analytical solutions for differentiation or integration problems:
+Características:
+• Cálculo de Raiz - Nossos programas podem calcular as raízes de equações não lineares usando vários métodos iterativos. Você pode escolher o método que melhor se adapta ao seu problema e ajustar os parâmetros como tolerância, iterações máximas, estimativa inicial, etc.
 
-• Quadrature Rule - This is a method for approximating the area under a curve by evaluating the function at specific points and using corresponding weights. 
+• Raízes Positivas ou Negativas - Nossos programas podem encontrar raízes positivas e negativas de equações não lineares. Você pode especificar o sinal da raiz desejada ou deixar o programa encontrar qualquer raiz disponível.
 
-• Trapezoidal rule - This is a method for approximating definite integrals by dividing the integration interval into smaller trapezoids and estimating the area under the curve as the sum of the areas of these trapezoids.
+• Opção de valor X_Nought personalizado - Nossos programas permitem que você insira sua própria estimativa inicial para os métodos iterativos. Você pode usar esta opção para acelerar a convergência ou evitar mínimos ou máximos locais.
 
-• Simpson's Rule - Simpson's rule is a method for approximating definite integrals by dividing the integration interval into smaller intervals and approximating the area under the curve using quadratic polynomials, providing a more accurate estimation compared to the trapezoidal rule.
+• Resolve equações contendo Logs, exponenciais, números de Euler, funções trigonométricas e, claro, divisão e multiplicação - Nossos programas podem lidar com vários tipos de equações não lineares que envolvem diferentes funções e operações matemáticas. Você pode inserir sua equação usando a sintaxe Python e nossos programas irão avaliá-la corretamente.
 
-• Romberg rule - This is a method for improving the accuracy of numerical integration by iteratively refining and extrapolating the estimates obtained from the trapezoidal rule.
+• Fornece o valor de todas as iterações em formato tabular - Nossos programas podem mostrar o valor de cada iteração para os métodos iterativos. Você pode usar esse recurso para monitorar o progresso e a precisão da solução. Isso é mostrado em uma forma tabular que é fácil de seguir.
 
-## Features:
+• Fornece o valor de ambas as raízes - Nossos programas podem encontrar as raízes positivas e negativas de uma equação quadrática usando a fórmula quadrática. Você pode inserir os coeficientes da equação e nossos programas calcularão e exibirão ambas as raízes.
 
-•	Root Calculation - Our programs can calculate the roots of nonlinear equations using various iterative methods. You can choose the method that suits your problem best and adjust the parameters such as tolerance, maximum iterations, initial guess, etc.
+• Visualiza cálculos matriciais - Nossos programas podem visualizar as operações matriciais envolvidas na resolução de um sistema de equações lineares usando métodos de eliminação de Gauss ou Gauss-Seidel. Você pode ver como a matriz é transformada em uma forma triangular superior ou como as variáveis ​​são atualizadas em cada iteração. Isso pode ajudá-lo a entender melhor os métodos e verificar se há erros.
 
-•	Positive or Negative Roots - Our programs can find both positive and negative roots of nonlinear equations. You can specify the sign of the root you want or let the program find any root available.
+• Iterações de saída em formato tabular - implementamos funções tabulares sempre que possível para dar à saída dos programas uma boa legibilidade e uma aparência sofisticada.
 
-•	Custom X_Nought Value option - Our programs allow you to enter your own initial guess for the iterative methods. You can use this option to speed up the convergence or to avoid local minima or maxima.
+Requisitos
+• Pré-requisito = Módulo Sympy, Módulo Math, Módulo Numpy - Você precisa instalar esses módulos antes de executar nossos programas. Você pode usar pip ou conda para instalá-los a partir da linha de comando. Por exemplo, para instalar o sympy usando pip, você pode digitar:
 
-•	Solves equations containing Logs, exponentials, Euler’s numbers, trigonometric functions and of course division and multiplication - Our programs can handle various types of nonlinear equations that involve different mathematical functions and operations. You can enter your equation using Python syntax and our programs will evaluate it correctly.
+pip install sympy
 
-•	Gives you value of all iterations in tabular form - Our programs can show you the value of each iteration for the iterative methods. You can use this feature to monitor the progress and accuracy of the solution. This is shown in a tabular form which is easy to follow.
+• Copie o código
 
-•	Gives you value of both roots - Our programs can find both the positive and negative roots of a quadratic equation using the quadratic formula. You can enter the coefficients of the equation and our programs will calculate and display both roots.
+• Basta copiar e colar os programas do repositório em seu IDE e executá-los! -
 
-•	Visualises Matrix calculations - Our programs can visualise the matrix operations involved in solving a system of linear equations using Gauss-Elimination or Gauss-Seidel methods. You can see how the matrix is transformed into an upper triangular form or how the variables are updated in each iteration. This can help you understand the methods better and check for errors.
+• Você pode encontrar nossos programas no repositório GitHub em https://github.com/Kaos599/Applied-Numerical-Methods .
 
-•	Outputs Iterations in tabular form - we have implemented tabular function wherever possible to give the output of the programs a nice readability and fancy look.
+• Você pode baixar ou clonar o repositório para sua máquina local e então abrir os programas em seu IDE (Ambiente de Desenvolvimento Integrado) preferido, como PyCharm, Spyder, Visual Studio Code, etc. Você também pode executar os programas em um Jupyter Notebook ou Google Colab.
 
+• Para executar um programa, basta copiar e colar o código em seu IDE e depois executá-lo. Você verá algumas instruções e avisos sobre como usar o programa e inserir suas entradas
 
-## Requirements
+Planos futuros:
+• Tornando-o mais fácil de usar - Planejamos melhorar a interface do usuário e a experiência de nossos programas, otimizando-os para uma melhor experiência do usuário. Também planejamos adicionar mais validações e tratamento de erros para evitar entradas e saídas inválidas.
 
-•	Pre-requisite = Sympy Module, Math Module, Numpy Module - You need to install these modules before running our programs. You can use pip or conda to install them from the command line. For example, to install sympy using pip, you can type:
+• Desenvolver um site baseado nisso - Planejamos criar um site que hospede nossos programas e permita que os usuários os acessem on-line sem instalar nada. O site também terá mais informações e recursos sobre métodos numéricos e programação Python.
 
-```pip install sympy```
+• Adicionando mais métodos - Planejamos expandir nossa coleção de métodos numéricos adicionando mais programas para diferentes tópicos, como otimização, integração, equações diferenciais, etc. Também planejamos atualizar nossos programas existentes com mais opções e variações dos métodos.
 
+• Melhorar a eficiência – Planejamos otimizar nosso código e algoritmos para fazê-los funcionar com mais rapidez e precisão.
 
-•	Copy the code
-
-•	Just copy paste the programs from the repository to your IDE and run them! - 
-
-• You can find our programs in the GitHub repository at https://github.com/Kaos599/Applied-Numerical-Methods.
-
-• You can download or clone the repository to your local machine and then open the programs in your preferred IDE (Integrated Development Environment), such as PyCharm, Spyder, Visual Studio 
-Code, etc. You can also run the programs in a Jupyter Notebook or Google Colab. 
-
-• To run a program, you just need to copy and paste the code into your IDE and then execute it. You will see some instructions and prompts on how to use the program and enter your inputs
-
-## Future Plans:
-
-•	Making it more user friendly - We plan to improve the user interface and experience of our programs by optimizing it for better UX. We also plan to add more validations and error handling to 
-prevent invalid inputs and outputs.
-
-•	Developing a website based on this - We plan to create a website that will host our programs and allow users to access them online without installing anything. The website will also have more information and resources about numerical methods and Python programming.
-
-•	Adding more methods - We plan to expand our collection of numerical methods by adding more programs for different topics such as optimization, integration, differential equations, etc. We 
-also plan to update our existing programs with more options and variations of the methods.
-
-•	Improving Efficiency - We plan to optimize our code and algorithms to make them run faster and more accurately. 
-
-•	Adding more features - We plan to add more features to our programs.
-
-
-
-
-## License
-This repository is licensed under the GNU License. See the LICENSE file for more details.
+• Adicionando mais recursos – Planejamos adicionar mais recursos aos nossos programas.
